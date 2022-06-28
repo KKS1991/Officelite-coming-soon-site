@@ -4,50 +4,127 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Links, Favicon, Bootstrap & customized style.css -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/custom.css">
+  <link rel="stylesheet" href="style/bootstrap-custom.css">
+  <link rel="stylesheet" href="style/components.css">
+
+   <!-- fontfamily -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
   
   <title>Frontend Mentor | Officelite coming soon site</title>
+
 </head>
-<body> 
-  A simple solution to complex tasks is coming soon
+<body>
+  
+  <!-- Main-Container -->
+  <main id="mainpage">
 
-  Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new 
-  collaboration platform built with an intuitive interface to improve productivity.
+    <!-- Logo, Title, Description and Get Started-Button -->
+    <section id="hero">
+      <div class="container hero-container">
+        <div class="hero-header">
+          <img src="assets/shared/logo.svg" alt="company logo">
+          <img src="assets/home/illustration-charts.svg" alt="charts" >
+        </div>
+        <div class="hero-txt">
+          <h1 class="hero-title">A simple solution to complex tasks is coming soon</h1>
+          <p class="hero-description">Say goodbye to inefficient juggling of multiple 
+          apps, teams, and projects. Officelite is the new collaboration platform built 
+          with an intuitive interface to improve productivity.
+          </p>
+          <button class="btn btn-start">Get Started</button>
+        </div>
+      </div>
+    </section>
 
-  Get Started
+    <!--Three Cards with pricing, services and free trial buttons-->
+    <section id="card">
+      <div class="container card-container">
 
-  Basic
-  Free
-  Up to 5 users for free
-  Basic document collaboration
-  2 gb storage
-  Great security and support
-  Try for Free
+        <!-- 1/3 Card -->
+        <div class="card card-one">
+          <p class="card-rate">Basic</p>
+          <h2 class="card-pricing">Free</h2>
+          <p class="card-pricing--explicit">Up to 5 users for free</p>
+          <p class="card-rate-service">Basic document collaboration</p>
+          <p class="card-rate-service">2 gb storage</p>
+          <p class="card-rate-service">Great security and support</p>
+          <button class="btn btn-freetrial">Try for Free</button>
+        </div>
 
-  Pro
-  $9.99
-  Per user, billed monthly
-  All essential integrations
-  50 gb storage
-  More control and insights
-  Try for Free
+        <!-- 2/3 Card -->
+        <div class="card card-two">
+          <p class="card-rate">Pro</p>
+          <h2 class="card-pricing">$9.99</h2>
+          <p class="card-pricing--explicit">Per user, billed monthly</p>
+          <p class="card-rate-service">All essential integrations</p>
+          <p class="card-rate-service">50 gb storage</p>
+          <p class="card-rate-service">More control and insights</p>
+          <button class="btn btn-freetrial">Try for Free</button>
+        </div>
 
-  Ultimate
-  $19.99
-  Per user, billed monthly
-  Robust work management
-  100 gb storage
-  VIP support
-  Try for Free
+        <!-- 3/3 Card -->
+        <div class="card card-three">
+          <p class="card-rate">Ultimate</p>
+          <h2 class="card-pricing">$19.99</h2>
+          <p class="card-pricing--explicit">Per user, billed monthly</p>
+          <p class="card-rate-service">Robust work management</p>
+          <p class="card-rate-service">100 gb storage</p>
+          <p class="card-rate-service">VIP support</p>
+          <button class="btn btn-freetrial">Try for Free</button>
+        </div>
 
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
+      </div>
+    </section>
 
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-  Get Started
+    <!-- Launch date, Counter and Get Started-Button -->
+    <section id="footer">
+      <div class="container footer-container">
+        <p>Coming<span class="launch">4 NOV 2020</span></p>
+
+        <div class="counter-container">
+          <!-- count days -->
+          <div class="counter-card">
+            <p class="counter-day">47</p>
+            <p class="counter-unit">days</p>
+          </div>
+
+          <!-- count hours -->
+          <div class="counter-card">
+            <p class="counter-hours">07</p>
+            <p class="counter-unit">hours</p>
+          </div>
+
+          <!-- count minutes -->
+          <div class="counter-card">
+            <p class="counter-min">56</p>
+            <p class="counter-unit">minutes</p>
+          </div>
+
+          <!-- count seconds -->
+          <div class="counter-card">
+            <p class="counter-day">14</p>
+            <p class="counter-unit">days</p>
+          </div>
+        </div>
+
+        <button class="btn btn-start">Get Started</button>
+      </div>
+    </section>
+
+  </main>  
+
+  <!-- JS -->
+  <script src="js/index.js"></script>
+
 </body>
 </html>
+
+<!-- For later-->
+<!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+<!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
