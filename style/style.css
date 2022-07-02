@@ -27,17 +27,17 @@
     --ff-general: 'Kumbh Sans', sans-serif;
 
     /*** Fontsizes */
-    --fs-h1: 3.5rem;
+    --fs-h1: 2.5rem;
     --fs-h2: 1.25rem;
     --fs-h3: 1rem;
     --fs-body-primary: 1.125rem;
     --fs-body-secondary: 1rem;
 
     /*** Line heights */
-    --lh-h1: 4rem;
+    --lh-h1: 3rem;
     --lh-h2: 2rem;
     --lh-h3: 3rem;
-    --lh-body: 1.75rem;
+    --lh-body: 1.625rem;
    
      /* Colors */
     --clr-darkblue: #5175ff;
@@ -50,6 +50,28 @@
 
 /***
  * 
+ * General
+ *
+***/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+span {
+    font-family: var(--ff-general);
+}
+
+/***
+ * 
  * hero-section
  *
 ***/
@@ -57,12 +79,10 @@
 .hero-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20%;
 }
 
 .hero-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-image: url("/assets/home/bg-pattern-header.svg");
     background-repeat:no-repeat;
     background-size: 150%;
@@ -80,5 +100,19 @@
 }
 
 .hero-txt {
+    padding-top: 2rem;
     text-align: center;
+}
+
+.hero-title {
+    font-size: var(--fs-h1);
+    font-weight: 900;
+    line-height: var(--lh-h1);
+    color: var(--clr-mediumdark);
+    padding-bottom: 1rem;
+}
+
+.hero-description {
+    color: var(--clr-grey);
+    line-height: var(--lh-body);
 }
