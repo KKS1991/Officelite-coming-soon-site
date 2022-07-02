@@ -47,3 +47,32 @@
     --clr-grey: #747b95;
     --clr-red: #f05b5b;
 }
+
+/***
+ * 
+ * hero-section
+ *
+***/
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-header {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+}
+
+.hero-logo {
+    width: 50%;
+}
+
+.hero-charts {
+    width: 50%
+}
+
+.hero-txt {
+    text-align: center;
+}
