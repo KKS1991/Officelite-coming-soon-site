@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon & style.css -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style/style.css">
+
+   <!-- fontfamily -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+  
+  <title>Frontend Mentor | Officelite coming soon site</title>
+
+</head>
+<body>
+  
+  <!-- Main-Container -->
+  <main id="mainpage">
+
+    <!-- Logo, Title, Description and Get Started-Button -->
+    <section id="hero">
+      <div class="hero-container">
+        <div class="hero-header">
+          <img class="hero-logo" src="assets/shared/logo.svg" alt="company logo">
+          <img class="hero-charts" src="assets/home/illustration-charts.svg" alt="charts" >
+        </div>
+        <div class="hero-txt">
+          <h1 class="hero-title">A simple solution to complex tasks is coming soon</h1>
+          <p class="hero-description">Say goodbye to inefficient juggling of multiple 
+          apps, teams, and projects. Officelite is the new collaboration platform built 
+          with an intuitive interface to improve productivity.
+          </p>
+          <button type="button" class="btn btn-start">Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <!--Three Cards with pricing, services and free trial buttons-->
+    <section id="card">
+      <div class="card-container">
+
+        <!-- 1/3 Card -->
+        <div class="card card-one">
+          <p class="card-rate">Basic</p>
+          <h2 class="card-pricing">Free</h2>
+          <p class="card-pricing--explicit">Up to 5 users for free</p>
+          <p class="card-rate--service">Basic document collaboration</p>
+          <p class="card-rate--service">2 gb storage</p>
+          <p class="card-rate--service">Great security and support</p>
+          <button type="button" class="btn btn-freetrial">Try for Free</button>
+        </div>
+
+        <!-- 2/3 Card -->
+        <div class="card card-two">
+          <p class="card-rate">Pro</p>
+          <h2 class="card-pricing">$9.99</h2>
+          <p class="card-pricing--explicit">Per user, billed monthly</p>
+          <p class="card-rate--service">All essential integrations</p>
+          <p class="card-rate--service">50 gb storage</p>
+          <p class="card-rate--service">More control and insights</p>
+          <button type="button" class="btn btn-freetrial btn-freetrial--light">Try for Free</button>
+        </div>
+
+        <!-- 3/3 Card -->
+        <div class="card card-three">
+          <p class="card-rate">Ultimate</p>
+          <h2 class="card-pricing">$19.99</h2>
+          <p class="card-pricing--explicit">Per user, billed monthly</p>
+          <p class="card-rate--service">Robust work management</p>
+          <p class="card-rate--service">100 gb storage</p>
+          <p class="card-rate--service">VIP support</p>
+          <button type="button" class="btn btn-freetrial">Try for Free</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Launch date, Counter and Get Started-Button -->
+    <section id="footer">
+      <div class="footer-container">
+        <p class="promotion">Coming <span class="launch">4 NOV 2020</span></p>
+
+        <div class="counter-container">
+          <!-- count days -->
+          <div class="counter-card">
+            <p class="counter-current">47</p>
+            <p class="counter-unit">days</p>
+          </div>
+
+          <!-- count hours -->
+          <div class="counter-card">
+            <p class="counter-current">07</p>
+            <p class="counter-unit">hours</p>
+          </div>
+
+          <!-- count minutes -->
+          <div class="counter-card">
+            <p class="counter-current">56</p>
+            <p class="counter-unit">min</p>
+          </div>
+
+          <!-- count seconds -->
+          <div class="counter-card">
+            <p class="counter-current">14</p>
+            <p class="counter-unit">sec</p>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-start btn-footer">Get Started</button>
+      </div>
+    </section>
+
+  </main>  
+
+  <!-- JS -->
+  <script src="js/index.js"></script>
+
+</body>
+</html>
+
+<!-- For later-->
+<!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+<!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->

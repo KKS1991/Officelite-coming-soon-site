@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon & style.css -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style/style.css">
+
+   <!-- fontfamily -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+  
+  <title>Frontend Mentor | Officelite coming soon site</title>
+
+</head>
+<body>
+  
+  <!-- Main-Container -->
+  <main id="mainpage">
+
+    <!-- Logo, Title, Description and Get Started-Button -->
+    <section id="hero">
+      <div class="hero-container--signup">
+        <div class="hero-header--signup">
+          <img class="hero-logo" src="assets/shared/logo.svg" alt="company logo">
+        </div>
+        <div class="hero-txt hero-txt--signup">
+          <h1 class="hero-title">Work smarter. Save time.</h1>
+          <p class="hero-description">Easily manage your projects. Get on the list and receive in-app perks
+          available only to early subscribers. We are moving into final development and getting ready for official 
+          launch soon.  
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Launch date, Counter and Get Started-Button-->
+    <section id="launch">
+      <div class="launch-container">
+        <p class="signup-promotion">Coming <span class="launch">4 NOV 2020</span></p>
+
+        <div class="counter-container">
+          <!-- count days -->
+          <div class="counter-card counter-card--signup">
+            <p class="counter-current counter-current--signup">47</p>
+            <p class="counter-unit counter-unit--signup">days</p>
+          </div>
+
+          <!-- count hours -->
+          <div class="counter-card counter-card--signup">
+            <p class="counter-current counter-current--signup">07</p>
+            <p class="counter-unit counter-unit--signup">hours</p>
+          </div>
+
+          <!-- count minutes -->
+          <div class="counter-card counter-card--signup">
+            <p class="counter-current counter-current--signup">56</p>
+            <p class="counter-unit counter-unit--signup">min</p>
+          </div>
+
+          <!-- count seconds -->
+          <div class="counter-card counter-card--signup">
+            <p class="counter-current counter-current--signup">14</p>
+            <p class="counter-unit counter-unit--signup">sec</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--form-->
+    <section id="form">
+        <form action="#" class="form">
+          <div class="form-item">
+            <input type="text" class="form-input" placeholder="Name" aria-label="Name">
+          </div>
+          <div class="form-item">
+            <input type="text" class="form-input" placeholder="Email Address" aria-label="Email Address">
+          </div>
+          <div class="form-item custom-select">
+            <select name="" id="">
+              <option value="">Basic</option>
+              <option value="">Pro</option>
+              <option value="">Ultimate</option>
+            </select>
+          </div>
+          <div class="form-item">
+            <input type="text" class="form-input" placeholder="Phone Number" aria-label="Phone Number">
+          </div>
+          <div class="form-item">
+            <input type="text" class="form-input" placeholder="Company" aria-label="Company">
+          </div>
+          <button type="button" class="btn btn-form">Get on the list</button>
+        </form>
+    </section>
+
+  </main>  
+
+  <!-- JS -->
+  <script src="js/index.js"></script>
+
+</body>
+</html>
+
+<!-- For later-->
+<!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+<!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
